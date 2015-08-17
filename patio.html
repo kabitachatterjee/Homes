@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Homes</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+  <div id="button-collapse">
+    <h1>Inspired Living by Home Stratosphere</h1>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</div>
+
+<div class="menu">
+
+  <ul>
+    <a href="index.html"><li>Living Room</li></a>
+    <a href="Bedroom.html"><li>Bedroom</li></a>
+    <a href="Kitchen.html"><li>Kitchen</li></a>
+    <a href="bathroom.html"><li>Bathroom</li></a>
+    <a href="patio.html"><li>Patio</li></a>
+  </ul>
+</div> 
+	<div id="main-navbar">
+    <span>Inspired Living by Home Stratosphere</span>
+    <span><a href="index.html">Living Room</a></span>
+      <span></span>
+      <span><a href="Bedroom.html">Bedroom</a></span>
+      <span><a href="Kitchen.html">Kitchen</a></span>
+      <span><a href="bathroom.html">Bathroom</a></span>
+      <span><a href="patio.html">Patio</a></span>
+  </div>
+
+<div class="narrative center">
+    <div class="row">
+      <div class = "col-xs-12">
+        Welcome to our gallery featuring a large selection of beautiful patios in stone, tile, or wood. Each patio in this collection is covered, which lends them certain benefits over uncovered patios.
+
+A patio consists of a paved outdoor space adjoining to the residence used for dining or recreation. Depending on the size of your patio, you may be able to include large architectural elements.
+</div>
+</div>
+</div>
+
+<div id ="patio-container" class="center">
+  </div>
+  <div id="mask5"></div>
+  <div id ="lightbox-patio" class="center">
+  </div>
+
+<!--/Template-->
+<script id="my-patio-template" type ="x-tmpl-mustache">
+  
+  <div class="card" style="background-image: url({{image}})">
+ <div class="detail">{{detail}}</div>
+  </div>
+  </script>
+  <!--/Lightbox template-->
+  <script id="lightbox-patio-template" type="x-tmpl-mustache">
+    <div class="lightbox">
+      <div class="poster" style="background-image: url({{ image }})"></div>
+      <div class="det">{{ detail }}</div>
+    </div>
+  </script>
+
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="patio.js"></script>
+  
+
+</body>
+</html>

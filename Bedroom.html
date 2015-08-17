@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Homes</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+  <div id="button-collapse">
+    <h1>Inspired Living by Home Stratosphere</h1>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</div>
+
+<div class="menu">
+
+  <ul>
+    <a href="index.html"><li>Living Room</li></a>
+    <a href="Bedroom.html"><li>Bedroom</li></a>
+    <a href="Kitchen.html"><li>Kitchen</li></a>
+    <a href="bathroom.html"><li>Bathroom</li></a>
+    <a href="patio.html"><li>Patio</li></a>
+  </ul>
+</div> 
+	<div id="main-navbar">
+    <span>Inspired Living by Home Stratosphere</span>
+    <span><a href="index.html">Living Room</a></span>
+      <span></span>
+      <span><a href="Bedroom.html">Bedroom</a></span>
+      <span><a href="Kitchen.html">Kitchen</a></span>
+      <span><a href="bathroom.html">Bathroom</a></span>
+      <span><a href="patio.html">Patio</a></span>
+  </div>
+
+<div class="narrative center">
+    <div class="row">
+      <div class = "col-xs-12">
+        Your bedroom is your sanctuary, a place of calm and respite from the world.
+It needs to fit your personality and lifestyle, and be a comfortable place you will be happy to spend time in.
+An intelligently and artfully designed bedroom can be all of this and more. When the styles and colors line up to create a perfect balance, you will feel more than rested when spending time here.
+
+This collection features master bedrooms in a range of sizes and styles, unified by their shared sense of space and theme.
+
+Each room is a cohesive space, drawn together by a major theme, color, or material.
+
+Some encompass a shared relaxation area, many open to patios or balconies with a clear view, and a few are simply thoughtful, luxurious, and cozy places to rest your head.
+
+When I think of a sanctuary, the image in my mind would fit right in with these brilliant rooms.
+</div>
+</div>
+</div>
+
+<div id ="bedrooms-container" class ="center">
+  </div>
+  <div id="mask1"></div>
+  <div id="lightbox-bedroom" class="center">
+  </div>
+
+<!--/Template-->
+<script id="my-bedroom-template" type ="x-tmpl-mustache">
+  
+  <div class="card" style="background-image: url({{image}})">
+ <div class="detail">{{detail}}</div>
+  </div>
+  </script>
+  <!--/Lightbox template-->
+  <script id="lightbox-bedroom-template" type="x-tmpl-mustache">
+    <div class="lightbox">
+      <div class="poster" style="background-image: url({{ image }})"></div>
+      <div class="det">{{ detail }}</div>
+    </div>
+  </script>
+
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="bedroom.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Homes</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+
+  <div id="button-collapse">
+    <h1>Inspired Living by Home Stratosphere</h1>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</div>
+
+<div class="menu">
+
+  <ul>
+    <a href="index.html"><li>Living Room</li></a>
+    <a href="Bedroom.html"><li>Bedroom</li></a>
+    <a href="Kitchen.html"><li>Kitchen</li></a>
+    <a href="bathroom.html"><li>Bathroom</li></a>
+    <a href="patio.html"><li>Patio</li></a>
+  </ul>
+</div> 
+
+	<div id="main-navbar">
+    <span>Inspired Living by Home Stratosphere</span>
+    <span><a href="index.html">Living Room</a></span>
+      <span></span>
+      <span><a href="Bedroom.html">Bedroom</a></span>
+      <span><a href="Kitchen.html">Kitchen</a></span>
+      <span><a href="bathroom.html">Bathroom</a></span>
+      <span><a href="patio.html">Patio</a></span>
+  </div>
+
+<!--Gallery of designs auto playing-->
+        <div class="gallery">
+            <div><img src="assets/gallery1.jpg"></div>
+            <div><img src="assets/gallery2.jpg"></div>
+            <div><img src="assets/gallery3.jpg"></div>
+            <div><img src="assets/gallery4.jpg"></div>
+            <div><img src="assets/gallery5.jpg"></div>
+            <div><img src="assets/gallery6.jpg"></div>
+            <div><img src="assets/gallery7.jpg"></div>
+            <div><img src="assets/gallery8.jpg"></div>
+            <div><img src="assets/gallery9.jpg"></div>
+            <div><img src="assets/gallery10.jpg"></div>
+            <div><img src="assets/gallery11.jpg"></div>
+            <div><img src="assets/gallery12.jpg"></div>
+            <div><img src="assets/gallery13.jpg"></div>
+            <div><img src="assets/gallery14.jpg"></div>
+            <div><img src="assets/gallery15.jpg"></div>
+            <div><img src="assets/gallery16.jpg"></div>
+        </div>
+      
+
+<div class="narrative center">
+  <div class="row">
+    <div class="col-xs-12">
+  Welcome to a world of ideas for redesigning and decorating your home. We have showcased a few of the best designs inspired by Home Stratosphere. There are different galleries for living room, bedroom and kitchen. So take your time and check them out. 
+  We start with the living room.In recent years, living room design has moved toward a more casual and comfortable style and away from the stuffy "drawing room" designs of past centuries.  In fact, in many homes (big and small), the living room serves as both the entertaining space for guests as well as the family room.
+  The reason designing a living room can be challenging is the many elements that must be considered - from floor to ceiling and then furniture selection.  It is not an easy task to turn an empty space into a spectacular living, but it is done all the time and our gallery is an evidence of it (even if you do not like some of the designs-we are confident you will find some that would be perfect for you).
+  Our gallery is incredibly diverse so we are confident you will find a design to inspire your renovation and/or custom design.  Enjoy.
+
+</div>
+</div>
+  </div>
+
+<div id ="cards-container" class = "center">
+  </div>
+  <div id="mask3">
+  </div>
+  <div id="lightbox-living" class = "center">
+  </div>
+
+
+<!--/Template-->
+<script id="my-template" type ="x-tmpl-mustache">
+  
+  <div class="card" style="background-image: url({{image}})">
+  <div class="detail">{{detail}}</div>
+  </div>
+  </script>
+  <!--/Lightbox template-->
+  <script id="lightbox-living-template" type="x-tmpl-mustache">
+    <div class="lightbox">
+      <div class="poster" style="background-image: url({{ image }})">
+      <div class="det">{{ detail }}</div>
+      </div>
+      
+    </div>
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="living.js"></script>
+
+</body>
+</html>
